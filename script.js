@@ -19,7 +19,7 @@ const getData = async () => {
   const url = "https://api.adviceslip.com/advice";
   displayLoading();
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, { cache: "no-store" });
     if (!response.ok) {
       throw new Error(
         `Sometimes the internet returns error code ${response.status}`
