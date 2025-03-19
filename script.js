@@ -16,7 +16,7 @@ const displayData = async (slip) => {
 };
 
 const getData = async () => {
-  const url = "https://api.adviceslip.com/advices";
+  const url = "https://api.adviceslip.com/advice";
   displayLoading();
   try {
     const response = await fetch(url);
