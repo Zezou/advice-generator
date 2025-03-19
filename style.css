@@ -1,0 +1,111 @@
+:root {
+  --light_cyan: hsl(193, 38%, 86%);
+  --neon_green: hsl(150, 100%, 66%);
+  --neon_green_dark: hsl(150, 60.3%, 47.5%);
+
+  --grayish_blue: hsl(217, 19%, 38%);
+  --dark_grayish_blue: hsl(217, 19%, 24%);
+  --dark_blue: hsl(218, 23%, 16%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.manrope-text {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--dark_blue);
+}
+
+.attribution {
+  color: var(--light_cyan);
+  font-size: 11px;
+  padding: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.content {
+  background-color: var(--dark_grayish_blue);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  position: relative;
+  margin: 1rem;
+  width: 24rem;
+}
+
+.title {
+  color: var(--neon_green);
+  font-size: 0.5rem;
+  letter-spacing: 0.15rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.advice {
+  color: var(--light_cyan);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.divider {
+  margin: 2rem 0;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 84%;
+}
+
+.dice-content {
+  background-color: var(--neon_green);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.dice-content:hover {
+  background-color: var(--neon_green_dark);
+}
+
+.dice {
+  margin: 0 0.2rem;
+  margin-top: 0.25rem;
+}
+
+.quote {
+  color: var(--light_cyan);
+  font-size: 1.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#loading {
+  color: var(--light_cyan);
+  font-size: 1.2rem;
+}
